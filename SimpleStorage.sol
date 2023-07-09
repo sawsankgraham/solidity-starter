@@ -58,7 +58,8 @@ contract SimpleStorage {
     // internal -> only visible internally
 
     //store function
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual {
+        // look at AddFiveStorage contract for explanation on virtual
         favoriteNumber = _favoriteNumber;
     }
 
